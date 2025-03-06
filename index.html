@@ -3,10 +3,64 @@
     <head>
         <title>CSS</title>
         <meta charset="UTF-8">
+
+        <!-- CSS Interno -> TAG style no HEAD -->
+        <style>
+            /*Existem 3 formas de aplicar o css em elementos:
+            TAG -> utilizando o nome da TAG. EX: b{...}
+            .classe -> criamos uma classe para reaproveitar o mesmo CSS em vários locais. Ex: .azul{...}
+            #id -> definimos um id para o elemento, aplica somente a ele, só podendo haver 1 id com aquele nome.
+            Ex: #logo{...}
+            */
+
+        b{
+            font-weight: normal;
+            color: #f00; /*Cor simplificada: ff 00 00*/
+            font-style: italic;
+        }
+
+        .texto-verde{
+            color: green;
+        }
+
+        .texto-amarelo{
+            color: yellow;
+        }
+
+        .fundo-vermelho{
+            background: #f00;
+        }
+        .fundo-azul{
+            background-color: #00f;
+        }
+
+        #quadrado{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        </style>
     </head>
-
     <body>
+        <h1 style="color: darkorange">Aula sobre CSS</h1>
+        <p style="color: #1be9bd">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tenetur illum sint est corporis maxime inventore facere laborum deserunt voluptatum enim reprehenderit quos nesciunt ea unde velit autem, ullam aspernatur.
+        </p>
 
+        <p>
+            Texto que era para ser negrito
+        <b>Olá CSS!</b>
+        </p>
+        <b>
+        Também sou negrito!
+        </b><br>
+
+        <!-- Para utilizar classes, utilizamos a propriedade class -->
+
+        <b class="texto-amarelo fundo-vermelho">
+            Eu mudei utilizando classes!
+        </b>
+        
 
     </body>
 
